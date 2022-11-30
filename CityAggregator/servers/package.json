@@ -1,0 +1,33 @@
+{
+  "name": "rainbowproj",
+  "version": "1.0.0",
+  "description": "* by  marco.rapelli@polito.it",
+  "main": "RainbowServer.js",
+  "dependencies": {
+    "bufferutil": "^4.0.3",
+    "cors": "^2.8.5",
+    "eiows": "^3.6.0",
+    "express": "^4.17.1",
+    "ms": "^2.1.2",
+    "socket.io": "^4.1.1",
+    "socket.io-client": "^4.1.2",
+    "utf-8-validate": "^5.0.5",
+    "ws": "^7.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node RainbowServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/AndLouis/torino-5g.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/AndLouis/torino-5g/issues"
+  },
+  "homepage": "https://gitlab.com/AndLouis/torino-5g#readme"
+}

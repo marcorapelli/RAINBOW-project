@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Web Application</title>
+
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.css' rel='stylesheet' />
+
+        <!--AMAZON AWS-->
+        <!--script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script-->
+        <!--script type="text/javascript" src="scripts/require.js"></script-->      
+
+	<script src="data/roads1.geojson"></script>
+        <!-- <script src="data/roads2.geojson"></script>
+        <script src="data/roads3.geojson"></script>
+	<script src="data/pathDemo.geojson"></script> -->
+
+        <script src="data/TrafficRed0_1.geojson"></script>
+	<script src="data/TrafficOrange0_1.geojson"></script>
+	<script src="data/TrafficYellow0_1.geojson"></script>
+	<script src="data/TrafficRed1_2.geojson"></script>
+	<script src="data/TrafficOrange1_2.geojson"></script>
+	<script src="data/TrafficYellow1_2.geojson"></script>
+	<script src="data/TrafficRed2_3.geojson"></script>
+	<script src="data/TrafficOrange2_3.geojson"></script>
+	<script src="data/TrafficYellow2_3.geojson"></script>
+	<script src="data/TrafficRed3_4.geojson"></script>
+	<script src="data/TrafficOrange3_4.geojson"></script>
+	<script src="data/TrafficYellow3_4.geojson"></script>
+	<script src="data/TrafficRed4_5.geojson"></script>
+	<script src="data/TrafficOrange4_5.geojson"></script>
+	<script src="data/TrafficYellow4_5.geojson"></script>
+	<script src="data/TrafficRed5_6.geojson"></script>
+	<script src="data/TrafficOrange5_6.geojson"></script>
+	<script src="data/TrafficYellow5_6.geojson"></script>
+	<script src="data/TrafficRed6_7.geojson"></script>
+	<script src="data/TrafficOrange6_7.geojson"></script>
+	<script src="data/TrafficYellow6_7.geojson"></script>
+	<script src="data/TrafficRed7_8.geojson"></script>
+	<script src="data/TrafficOrange7_8.geojson"></script>
+	<script src="data/TrafficYellow7_8.geojson"></script>
+	<script src="data/TrafficRed8_9.geojson"></script>
+	<script src="data/TrafficOrange8_9.geojson"></script>
+	<script src="data/TrafficYellow8_9.geojson"></script>
+	<script src="data/TrafficRed9_10.geojson"></script>
+	<script src="data/TrafficOrange9_10.geojson"></script>
+	<script src="data/TrafficYellow9_10.geojson"></script>
+	<script src="data/TrafficRed10_11.geojson"></script>
+	<script src="data/TrafficOrange10_11.geojson"></script>
+	<script src="data/TrafficYellow10_11.geojson"></script>
+	<script src="data/TrafficRed11_12.geojson"></script>
+	<script src="data/TrafficOrange11_12.geojson"></script>
+	<script src="data/TrafficYellow11_12.geojson"></script>
+	<script src="data/TrafficRed12_13.geojson"></script>
+	<script src="data/TrafficOrange12_13.geojson"></script>
+	<script src="data/TrafficYellow12_13.geojson"></script>
+	<script src="data/TrafficRed13_14.geojson"></script>
+	<script src="data/TrafficOrange13_14.geojson"></script>
+	<script src="data/TrafficYellow13_14.geojson"></script>
+	<script src="data/TrafficRed14_15.geojson"></script>
+	<script src="data/TrafficOrange14_15.geojson"></script>
+	<script src="data/TrafficYellow14_15.geojson"></script>
+	<script src="data/TrafficRed15_16.geojson"></script>
+	<script src="data/TrafficOrange15_16.geojson"></script>
+	<script src="data/TrafficYellow15_16.geojson"></script>
+	<script src="data/TrafficRed16_17.geojson"></script>
+	<script src="data/TrafficOrange16_17.geojson"></script>
+	<script src="data/TrafficYellow16_17.geojson"></script>
+	<script src="data/TrafficRed17_18.geojson"></script>
+	<script src="data/TrafficOrange17_18.geojson"></script>
+	<script src="data/TrafficYellow17_18.geojson"></script>
+	<script src="data/TrafficRed18_19.geojson"></script>
+	<script src="data/TrafficOrange18_19.geojson"></script>
+	<script src="data/TrafficYellow18_19.geojson"></script>
+	<script src="data/TrafficRed19_20.geojson"></script>
+	<script src="data/TrafficOrange19_20.geojson"></script>
+	<script src="data/TrafficYellow19_20.geojson"></script>
+	<script src="data/TrafficRed20_21.geojson"></script>
+	<script src="data/TrafficOrange20_21.geojson"></script>
+	<script src="data/TrafficYellow20_21.geojson"></script>
+	<script src="data/TrafficRed21_22.geojson"></script>
+	<script src="data/TrafficOrange21_22.geojson"></script>
+	<script src="data/TrafficYellow21_22.geojson"></script>
+	<script src="data/TrafficRed22_23.geojson"></script>
+	<script src="data/TrafficOrange22_23.geojson"></script>
+	<script src="data/TrafficYellow22_23.geojson"></script>
+	<script src="data/TrafficRed23_24.geojson"></script>
+	<script src="data/TrafficOrange23_24.geojson"></script>
+	<script src="data/TrafficYellow23_24.geojson"></script>
+
+	<script src="data/WorkLayer.geojson"></script>
+
+        <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+        <script type="text/javascript" src="scripts/online.js"></script>
+        <script type="text/javascript" src="scripts/streetimg.js"></script>
+        <script type="text/javascript" src="scripts/pulsingDot.js"></script>
+        <script type="text/javascript" src="scripts/offline.js"></script>
+	 <script type="text/javascript" src="scripts/testDemo.js"></script>
+	<script type="text/javascript" src="scripts/SetTraffic.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+
+        <link rel="stylesheet" href="styles/fonts/fonts.css">
+        <script src="https://canvas-gauges.com/download/latest/all/gauge.min.js"></script>
+
+        <link rel="stylesheet" href="styles/loading-bar.css">
+        <script type="text/javascript" src="scripts/loading-bar.js"></script>	
+
+    </head>
+    <body>
+
+        <div id='map'></div>
+        <nav id='listing-group' class='listing-group'>
+        <input type='checkbox' id='viewing' checked='checked'>
+        <label for='viewing'></label>
+    </nav>
+
+    <div id='car_info' class='toggle-menu top'>
+        <div class='toggle-menu-inner'>
+        <label>On Board Data</label>
+        <div id='info_view'>
+            <ul>
+                <!-- <li id="IMEI"> IMEI: NULL </li>  -->
+                <li id="VehicleSpeedVSO"> NULL </li>
+                <!-- <li id="SOC"> Battery Level: NULL </li>  -->
+            </ul>
+
+            <!--<div class=left_battery>
+                <div id="battery" class="ldBar" 
+                    data-preset="energy"
+                    data-value="100"
+                    data-stroke-width="20"
+                    >
+
+                </div>
+            </div> -->
+            
+            <div class=right_speed>
+                <canvas id="car_speed_canvas"></canvas>
+            </div>
+            
+            <div class=spacer></div>
+
+        </div>
+        </div>
+    </div>
+
+	<!-- <script src="//serverfull.polito.it:6600/socket.io/socket.io.js"></script> -->
+	<!-- <script src="//serverfull.polito.it:6700/socket.io/socket.io.js"></script> -->
+        <script>
+
+	   function parse_query_string(query) {
+		  var vars = query.split("&");
+		  var query_string = {};
+		  for (var i = 0; i < vars.length; i++) {
+		    var pair = vars[i].split("=");
+		    var key = decodeURIComponent(pair[0]);
+		    var value = decodeURIComponent(pair[1]);
+		    // If first entry with this name
+		    if (typeof query_string[key] === "undefined") {
+		      query_string[key] = decodeURIComponent(value);
+		      // If second entry with this name
+		    } else if (typeof query_string[key] === "string") {
+		      var arr = [query_string[key], decodeURIComponent(value)];
+		      query_string[key] = arr;
+		      // If third or later entry with this name
+		    } else {
+		      query_string[key].push(decodeURIComponent(value));
+		   }
+ 		 }
+		  return query_string;
+		}
+
+            //mapboxgl.accessToken = 'pk.eyJ1IjoibG91aXNsZWRhIiwiYSI6ImNqeHZ5enlvbDAxc3YzaHFnenhmOG14NmEifQ.P0fkXsLgSkWC_2ZBKKPRTA';
+	    mapboxgl.accessToken = 'pk.eyJ1IjoicmFwZWxsaSIsImEiOiJjanh2cTZzMjIwN24xM2Nucmk5MDcycDF3In0.ikCNk6rAPFkrfL9bQhj5Pg';
+            var map = new mapboxgl.Map({
+                            //style: 'mapbox://styles/mapbox/light-v10',
+                            //style: 'mapbox://styles/louisleda/cjxx4g35m7twn1cocoua7gxj3',
+			    style: 'mapbox://styles/rapelli/cjy750ee403ur1cqkoi6qf107',
+                            center: [7.683933,45.069106],
+                            zoom: 12,
+                            pitch: 0,
+                            bearing: 0,
+                            container: 'map',
+                            arround : [7.683933,45.069106]
+                            });
+
+            var ourcenter = {
+                                "type": "FeatureCollection",
+                                "features": [{
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [7.683933,45.069106]
+                                    }
+                                }]
+                            };
+
+	    var works = {
+			    'type': 'FeatureCollection',
+			    'features': []
+			};
+
+	    var limit30 = {
+			    'type': 'FeatureCollection',
+			    'features': []
+			};
+
+	    var limit50 = {
+			    'type': 'FeatureCollection',
+			    'features': []
+			};
+
+	    var controls = new mapboxgl.NavigationControl();
+	    map.addControl(controls);
+	    map.dragRotate.disable();
+	    map.dragPan.disable();
+
+            var normalview = {"argument" : true};
+
+            document.getElementById('listing-group').addEventListener('change',
+                (e) => {
+                    if (e.target.checked)
+                        {
+                        normalview.argument = true;
+                        map.setPitch(0);
+                        map.setBearing(0);
+                        map.setZoom(13);
+
+			//map.addControl(controls);
+                        }
+                    else{
+                        normalview.argument = false;
+                        map.setPitch(60);
+                        map.setZoom(18);
+
+			//map.removeControl(controls);
+                        }
+                });
+
+            // The 'building' layer in the mapbox-streets vector source contains building-height
+            // data from OpenStreetMap.
+            map.on('load', function() {
+
+
+
+            // Insert the layer beneath any symbol layer.
+                    var layers = map.getStyle().layers;
+
+                    var labelLayerId;
+                    for (var i = 0; i < layers.length; i++) {
+                    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                        labelLayerId = layers[i].id;
+                    break;
+                    }
+                    }
+
+            map.addLayer({
+                            'id': '3d-buildings',
+                            'source': 'composite',
+                            'source-layer': 'building',
+                            'filter': ['==', 'extrude', 'true'],
+                            'type': 'fill-extrusion',
+                            'minzoom': 17,
+                            'paint': {
+                            'fill-extrusion-color': '#aaa',
+
+                            // use an 'interpolate' expression to add a smooth transition effect to the
+                            // buildings as the user zooms in
+                            'fill-extrusion-height': [
+                            "interpolate", ["linear"], ["zoom"],
+                            15, 0,
+                            15.05, ["get", "height"]
+                            ],
+                            'fill-extrusion-base': [
+                            "interpolate", ["linear"], ["zoom"],
+                            15, 0,
+                            15.05, ["get", "min_height"]
+                            ],
+                            'fill-extrusion-opacity': .6
+                            }
+                            }, labelLayerId);
+
+	SetTraffic(25);
+
+	/*
+	WorkLayer.features.forEach(function(pippo) {
+	var elW = document.createElement('div');
+	elW.className = 'works';
+	var works_ = new mapboxgl.Marker(elW).setLngLat(pippo.geometry.coordinates);
+	works_.addTo(map);
+	});
+	*/
+
+       map.addImage('streetimage', streetimg, {pixelRatio: 4 });
+       map.addImage('pulsing-dot', pulsingDot, {pixelRatio: 4 });
+       map.addSource('point' ,
+                {
+                    "type" : "geojson",
+                    "data" : ourcenter
+                });
+
+       map.addLayer({
+                "id" : "point",
+                "type" : "symbol",
+                "source" : "point",
+                "layout" : {
+                    "icon-image" : "pulsing-dot",
+		            "visibility" : "visible"
+                }
+            });
+
+      var el = document.createElement('div');
+      el.className = 'marker';
+      var marker_ = new mapboxgl.Marker(el).setLngLat([7.683933,45.069106]);
+
+
+    /**Simulation Online**/
+        map.addSource('routestory', { type: 'geojson', data:  {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": []
+                }
+            } });
+
+        map.addLayer({
+            "id": "routestory",
+            "type": "line",
+            "source": "routestory",
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round",
+                "visibility" : "visible"
+                },
+            "paint": {
+                "line-color": "#fc03f0",
+                "line-width": 8
+                }
+            });
+
+	/********* SOCKETS 
+	var socket = io.connect('//serverfull.polito.it:6600');
+	socket.on('message', function(message) {
+		console.log('The server has a message for you: ' + message);
+
+		/******* FOR CLIENT => SERVER COMMUNICATION
+		setInterval(function() {
+			console.log('Sending reply to server');
+			socket.emit('message', 'Hello! I am a client!');
+		}, 1000);
+		
+	});
+	*********/
+
+    var tableaudebord = new RadialGauge({
+                renderTo: document.getElementById('car_speed_canvas'),
+                width: 120,
+                height: 120,
+                units: "Km/h",
+                minValue: 0,
+                maxValue: 300,
+                majorTicks: [
+                    "0",
+                    "20",
+                    "40",
+                    "60",
+                    "80",
+                    "100",
+                    "120",
+                    "140",
+                    "160",
+                    "180",
+                    "200",
+                    "220",
+                    "240",
+                    "260",
+                    "280",
+                    "300"
+                ],
+                minorTicks: 2,
+                strokeTicks: true,
+                highlights: [
+                    {
+                        "from": 120,
+                        "to": 180,
+                        "color": "rgba(238, 187, 21, .75)"
+                    },
+                    {
+                        "from": 180,
+                        "to": 300,
+                        "color": "rgba(247, 11, 35, .75)"
+                    }
+
+                ],
+                colorPlate: "#000",
+                borderShadowWidth: 0,
+                borders: false,
+                needleType: "arrow",
+                needleWidth: 2,
+                needleCircleSize: 7,
+                needleCircleOuter: true,
+                needleCircleInner: false,
+                animation :  { delay : 10, duration : 400, fn : 'elastic' } 
+            }).draw();
+
+        //simulate(marker_,tableaudebord);
+        /**Simulation Offline**/
+        //TestSimulationOffline(roads1,marker_);
+	TestDemo(roads1,marker_,tableaudebord);
+	map.addLayer(roads1);
+  
+
+       });
+
+        </script>
+
+    </body>
+</html>

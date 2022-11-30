@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "65f6db04-9559-4250-b8fe-9f91e8ffdead",
+		"name": "Polito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getData",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "accessKey",
+							"value": "AKIAJYQME5UUGBLNK4QQ",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "uqRdPSbUqksC5HuSlMHtvS98NKktkNssagmM5on9",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "eu-west-1",
+							"type": "string"
+						},
+						{
+							"key": "service",
+							"value": "execute-api",
+							"type": "string"
+						},
+						{
+							"key": "saveToRequest",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Host",
+						"value": "u0t1w02gif.execute-api.eu-west-1.amazonaws.com"
+					},
+					{
+						"key": "X-Amz-Date",
+						"value": "20180611T072720Z"
+					},
+					{
+						"key": "Authorization",
+						"value": "AWS4-HMAC-SHA256 Credential=AKIAJYQME5UUGBLNK4QQ/20180611/eu-west-1/execute-api/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=d7afaa63eae756328942abe18c91d421d4287f3097a231465af9a037ad919060"
+					}
+				],
+				"url": {
+					"raw": "https://u0t1w02gif.execute-api.eu-west-1.amazonaws.com/t1/thirdparty/v1/clearances/f58acf2d-05b5-425b-880f-58f982055bb9/telematicdata",
+					"protocol": "https",
+					"host": [
+						"u0t1w02gif",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"t1",
+						"thirdparty",
+						"v1",
+						"clearances",
+						"f58acf2d-05b5-425b-880f-58f982055bb9",
+						"telematicdata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

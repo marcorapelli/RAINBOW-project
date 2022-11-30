@@ -1,0 +1,86 @@
+body { margin:0; padding:0; }
+
+#map {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+#menu {
+    position: absolute;
+    background: rgba(5, 148, 22, 0.5);
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+
+/**************************************/
+
+.rsu_cam {
+		background-image: url('../Images/rsu.png');
+		background-size: cover;
+		width: 24px;
+  		height: 17px;
+	}
+
+.dog {
+		background-image: url('../Images/dog.png');
+		background-size: cover;
+		width: 24px;
+  		height: 25px;
+	}
+
+
+.veh1 {
+  		background-image: url('../Images/slice1_full.png');
+  		background-size: cover;
+  		width: 25px;
+  		height: 25px;
+  		border-radius: 80%;
+	}
+
+.veh2 {
+  		background-image: url('../Images/slice2_full.png');
+  		background-size: cover;
+  		width: 25px;
+  		height: 25px;
+  		border-radius: 80%;
+	}
+
+.veh3 {
+  		background-image: url('../Images/slice3_full.png');
+  		background-size: cover;
+  		width: 25px;
+  		height: 25px;
+  		border-radius: 80%;
+	}
+
+.veh4 {
+  		background-image: url('../Images/slice4_full.png');
+  		background-size: cover;
+  		width: 25px;
+  		height: 25px;
+  		border-radius: 80%;
+	}
+
+.veh5 {
+  		background-image: url('../Images/slice5_full.png');
+  		background-size: cover;
+  		width: 25px;
+  		height: 25px;
+  		border-radius: 80%;
+	}
+
+
+/**********************************************/
+
+/*
+.mapboxgl-ctrl-compass {
+display: none !important;
+}
+*/
+
+

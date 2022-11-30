@@ -1,0 +1,297 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'socket.io' ]
+2 info using npm@1.1.66
+3 info using node@v0.8.15
+4 verbose read json /var/www/html/servers/package.json
+5 warn package.json torinodmapp_v2@1.0.0 No README.md file found!
+6 verbose read json /var/www/html/servers/node_modules/amdefine/package.json
+7 verbose read json /var/www/html/servers/node_modules/postman-sandbox/package.json
+8 verbose read json /var/www/html/servers/node_modules/merge-descriptors/package.json
+9 verbose read json /var/www/html/servers/node_modules/dgram/package.json
+10 verbose read json /var/www/html/servers/node_modules/websocket/package.json
+11 verbose read json /var/www/html/servers/node_modules/serve-static/package.json
+12 verbose read json /var/www/html/servers/node_modules/escodegen/package.json
+13 verbose read json /var/www/html/servers/node_modules/minimist/package.json
+14 verbose read json /var/www/html/servers/node_modules/mime/package.json
+15 verbose read json /var/www/html/servers/node_modules/ws/package.json
+16 verbose read json /var/www/html/servers/node_modules/engine.io/package.json
+17 verbose read json /var/www/html/servers/node_modules/parseuri/package.json
+18 verbose read json /var/www/html/servers/node_modules/mime-db/package.json
+19 verbose read json /var/www/html/servers/node_modules/string-width/package.json
+20 verbose read json /var/www/html/servers/node_modules/forever-agent/package.json
+21 verbose read json /var/www/html/servers/node_modules/has-cors/package.json
+22 verbose read json /var/www/html/servers/node_modules/lodash.isstring/package.json
+23 verbose read json /var/www/html/servers/node_modules/wrappy/package.json
+24 verbose read json /var/www/html/servers/node_modules/btoa/package.json
+25 verbose read json /var/www/html/servers/node_modules/content-disposition/package.json
+26 verbose read json /var/www/html/servers/node_modules/array-uniq/package.json
+27 verbose read json /var/www/html/servers/node_modules/extsprintf/package.json
+28 verbose read json /var/www/html/servers/node_modules/abbrev/package.json
+29 verbose read json /var/www/html/servers/node_modules/csv-parse/package.json
+30 verbose read json /var/www/html/servers/node_modules/range-parser/package.json
+31 verbose read json /var/www/html/servers/node_modules/resolve/package.json
+32 verbose read json /var/www/html/servers/node_modules/intel/package.json
+33 verbose read json /var/www/html/servers/node_modules/is-fullwidth-code-point/package.json
+34 verbose read json /var/www/html/servers/node_modules/ip-regex/package.json
+35 verbose read json /var/www/html/servers/node_modules/asn1/package.json
+36 verbose read json /var/www/html/servers/node_modules/stack-trace/package.json
+37 verbose read json /var/www/html/servers/node_modules/nopt/package.json
+38 verbose read json /var/www/html/servers/node_modules/body-parser/package.json
+39 verbose read json /var/www/html/servers/node_modules/estraverse/package.json
+40 verbose read json /var/www/html/servers/node_modules/once/package.json
+41 verbose read json /var/www/html/servers/node_modules/colors/package.json
+42 verbose read json /var/www/html/servers/node_modules/caseless/package.json
+43 verbose read json /var/www/html/servers/node_modules/deep-is/package.json
+44 verbose read json /var/www/html/servers/node_modules/engine.io-parser/package.json
+45 verbose read json /var/www/html/servers/node_modules/yeast/package.json
+46 verbose read json /var/www/html/servers/node_modules/ajv/package.json
+47 verbose read json /var/www/html/servers/node_modules/concat-map/package.json
+48 verbose read json /var/www/html/servers/node_modules/aws4/package.json
+49 verbose read json /var/www/html/servers/node_modules/socket.io-parser/package.json
+50 verbose read json /var/www/html/servers/node_modules/performance-now/package.json
+51 verbose read json /var/www/html/servers/node_modules/array-flatten/package.json
+52 verbose read json /var/www/html/servers/node_modules/mime-format/package.json
+53 verbose read json /var/www/html/servers/node_modules/socket.io-client/package.json
+54 verbose read json /var/www/html/servers/node_modules/parseurl/package.json
+55 verbose read json /var/www/html/servers/node_modules/bluebird/package.json
+56 verbose read json /var/www/html/servers/node_modules/readable-stream/package.json
+57 verbose read json /var/www/html/servers/node_modules/domelementtype/package.json
+58 verbose read json /var/www/html/servers/node_modules/is-typedarray/package.json
+59 verbose read json /var/www/html/servers/node_modules/setprototypeof/package.json
+60 verbose read json /var/www/html/servers/node_modules/async/package.json
+61 verbose read json /var/www/html/servers/node_modules/form-data/package.json
+62 verbose read json /var/www/html/servers/node_modules/arraybuffer.slice/package.json
+63 verbose read json /var/www/html/servers/node_modules/debug/package.json
+64 verbose read json /var/www/html/servers/node_modules/qs/package.json
+65 verbose read json /var/www/html/servers/node_modules/ee-first/package.json
+66 verbose read json /var/www/html/servers/node_modules/delayed-stream/package.json
+67 verbose read json /var/www/html/servers/node_modules/wordwrap/package.json
+68 verbose read json /var/www/html/servers/node_modules/semver/package.json
+69 verbose read json /var/www/html/servers/node_modules/optionator/package.json
+70 verbose read json /var/www/html/servers/node_modules/escape-html/package.json
+71 verbose read json /var/www/html/servers/node_modules/faker/package.json
+72 verbose read json /var/www/html/servers/node_modules/minimatch/package.json
+73 verbose read json /var/www/html/servers/node_modules/fresh/package.json
+74 verbose read json /var/www/html/servers/node_modules/newman/package.json
+75 verbose read json /var/www/html/servers/node_modules/cookie-signature/package.json
+76 verbose read json /var/www/html/servers/node_modules/better-assert/package.json
+77 verbose read json /var/www/html/servers/node_modules/xmlbuilder/package.json
+78 verbose read json /var/www/html/servers/node_modules/ipaddr.js/package.json
+79 verbose read json /var/www/html/servers/node_modules/core-util-is/package.json
+80 verbose read json /var/www/html/servers/node_modules/fast-json-stable-stringify/package.json
+81 verbose read json /var/www/html/servers/node_modules/psl/package.json
+82 verbose read json /var/www/html/servers/node_modules/istanbul/package.json
+83 verbose read json /var/www/html/servers/node_modules/typedarray-to-buffer/package.json
+84 verbose read json /var/www/html/servers/node_modules/proxy-addr/package.json
+85 verbose read json /var/www/html/servers/node_modules/uri-js/package.json
+86 verbose read json /var/www/html/servers/node_modules/safer-buffer/package.json
+87 verbose read json /var/www/html/servers/node_modules/httpntlm/package.json
+88 verbose read json /var/www/html/servers/node_modules/type-check/package.json
+89 verbose read json /var/www/html/servers/node_modules/accepts/package.json
+90 verbose read json /var/www/html/servers/node_modules/uglify-js/package.json
+91 verbose read json /var/www/html/servers/node_modules/flatted/package.json
+92 verbose read json /var/www/html/servers/node_modules/esutils/package.json
+93 verbose read json /var/www/html/servers/node_modules/strip-ansi/package.json
+94 verbose read json /var/www/html/servers/node_modules/cli-progress/package.json
+95 verbose read json /var/www/html/servers/node_modules/utils-merge/package.json
+96 verbose read json /var/www/html/servers/node_modules/inflight/package.json
+97 verbose read json /var/www/html/servers/node_modules/type-is/package.json
+98 verbose read json /var/www/html/servers/node_modules/postman-collection-transformer/package.json
+99 verbose read json /var/www/html/servers/node_modules/chardet/package.json
+100 verbose read json /var/www/html/servers/node_modules/brace-expansion/package.json
+101 verbose read json /var/www/html/servers/node_modules/socket.io/package.json
+102 verbose read json /var/www/html/servers/node_modules/postman-collection/package.json
+103 verbose read json /var/www/html/servers/node_modules/inherits/package.json
+104 verbose read json /var/www/html/servers/node_modules/media-typer/package.json
+105 verbose read json /var/www/html/servers/node_modules/asynckit/package.json
+106 verbose read json /var/www/html/servers/node_modules/bytes/package.json
+107 verbose read json /var/www/html/servers/node_modules/marked/package.json
+108 verbose read json /var/www/html/servers/node_modules/symbol/package.json
+109 verbose read json /var/www/html/servers/node_modules/entities/package.json
+110 verbose read json /var/www/html/servers/node_modules/dashdash/package.json
+111 verbose read json /var/www/html/servers/node_modules/handlebars/package.json
+112 verbose read json /var/www/html/servers/node_modules/utcstring/package.json
+113 verbose read json /var/www/html/servers/node_modules/base64-arraybuffer/package.json
+114 verbose read json /var/www/html/servers/node_modules/balanced-match/package.json
+115 verbose read json /var/www/html/servers/node_modules/har-validator/package.json
+116 verbose read json /var/www/html/servers/node_modules/cookie/package.json
+117 verbose read json /var/www/html/servers/node_modules/destroy/package.json
+118 verbose read json /var/www/html/servers/node_modules/uvm/package.json
+119 verbose read json /var/www/html/servers/node_modules/aws-sign2/package.json
+120 verbose read json /var/www/html/servers/node_modules/ms/package.json
+121 verbose read json /var/www/html/servers/node_modules/eventemitter3/package.json
+122 verbose read json /var/www/html/servers/node_modules/verror/package.json
+123 verbose read json /var/www/html/servers/node_modules/path-is-absolute/package.json
+124 verbose read json /var/www/html/servers/node_modules/has-binary2/package.json
+125 verbose read json /var/www/html/servers/node_modules/has-ansi/package.json
+126 verbose read json /var/www/html/servers/node_modules/send/package.json
+127 verbose read json /var/www/html/servers/node_modules/after/package.json
+128 verbose read json /var/www/html/servers/node_modules/domutils/package.json
+129 verbose read json /var/www/html/servers/node_modules/isarray/package.json
+130 verbose read json /var/www/html/servers/node_modules/ecc-jsbn/package.json
+131 verbose read json /var/www/html/servers/node_modules/fast-levenshtein/package.json
+132 verbose read json /var/www/html/servers/node_modules/lodash.mergewith/package.json
+133 verbose read json /var/www/html/servers/node_modules/xtend/package.json
+134 verbose read json /var/www/html/servers/node_modules/srcset/package.json
+135 verbose read json /var/www/html/servers/node_modules/ultron/package.json
+136 verbose read json /var/www/html/servers/node_modules/util-deprecate/package.json
+137 verbose read json /var/www/html/servers/node_modules/lodash.escaperegexp/package.json
+138 verbose read json /var/www/html/servers/node_modules/encodeurl/package.json
+139 verbose read json /var/www/html/servers/node_modules/express/package.json
+140 verbose read json /var/www/html/servers/node_modules/number-is-nan/package.json
+141 verbose read json /var/www/html/servers/node_modules/json-schema-traverse/package.json
+142 verbose read json /var/www/html/servers/node_modules/component-inherit/package.json
+143 verbose read json /var/www/html/servers/node_modules/object-hash/package.json
+144 verbose read json /var/www/html/servers/node_modules/lodash/package.json
+145 verbose read json /var/www/html/servers/node_modules/dbug/package.json
+146 verbose read json /var/www/html/servers/node_modules/on-finished/package.json
+147 verbose read json /var/www/html/servers/node_modules/esprima/package.json
+148 verbose read json /var/www/html/servers/node_modules/supports-color/package.json
+149 verbose read json /var/www/html/servers/node_modules/backo2/package.json
+150 verbose read json /var/www/html/servers/node_modules/postman-request/package.json
+151 verbose read json /var/www/html/servers/node_modules/sprintf-js/package.json
+152 verbose read json /var/www/html/servers/node_modules/neo-async/package.json
+153 verbose read json /var/www/html/servers/node_modules/commander/package.json
+154 verbose read json /var/www/html/servers/node_modules/postman-url-encoder/package.json
+155 verbose read json /var/www/html/servers/node_modules/color-name/package.json
+156 verbose read json /var/www/html/servers/node_modules/dom-serializer/package.json
+157 verbose read json /var/www/html/servers/node_modules/to-array/package.json
+158 verbose read json /var/www/html/servers/node_modules/har-schema/package.json
+159 verbose read json /var/www/html/servers/node_modules/xmlhttprequest-ssl/package.json
+160 verbose read json /var/www/html/servers/node_modules/word-wrap/package.json
+161 verbose read json /var/www/html/servers/node_modules/json-stringify-safe/package.json
+162 verbose read json /var/www/html/servers/node_modules/etag/package.json
+163 verbose read json /var/www/html/servers/node_modules/extend/package.json
+164 verbose read json /var/www/html/servers/node_modules/negotiator/package.json
+165 verbose read json /var/www/html/servers/node_modules/http-signature/package.json
+166 verbose read json /var/www/html/servers/node_modules/domhandler/package.json
+167 verbose read json /var/www/html/servers/node_modules/resolve-from/package.json
+168 verbose read json /var/www/html/servers/node_modules/forwarded/package.json
+169 verbose read json /var/www/html/servers/node_modules/escape-string-regexp/package.json
+170 verbose read json /var/www/html/servers/node_modules/argparse/package.json
+171 verbose read json /var/www/html/servers/node_modules/cli-table3/package.json
+172 verbose read json /var/www/html/servers/node_modules/mime-types/package.json
+173 verbose read json /var/www/html/servers/node_modules/raw-body/package.json
+174 verbose read json /var/www/html/servers/node_modules/engine.io-client/package.json
+175 verbose read json /var/www/html/servers/node_modules/parse-ms/package.json
+176 verbose read json /var/www/html/servers/node_modules/object-assign/package.json
+177 verbose read json /var/www/html/servers/node_modules/iconv-lite/package.json
+178 verbose read json /var/www/html/servers/node_modules/htmlparser2/package.json
+179 verbose read json /var/www/html/servers/node_modules/string_decoder/package.json
+180 verbose read json /var/www/html/servers/node_modules/statuses/package.json
+181 verbose read json /var/www/html/servers/node_modules/uuid/package.json
+182 verbose read json /var/www/html/servers/node_modules/ansi-styles/package.json
+183 verbose read json /var/www/html/servers/node_modules/sshpk/package.json
+184 verbose read json /var/www/html/servers/node_modules/prelude-ls/package.json
+185 verbose read json /var/www/html/servers/node_modules/isstream/package.json
+186 verbose read json /var/www/html/servers/node_modules/mkdirp/package.json
+187 verbose read json /var/www/html/servers/node_modules/lodash.isplainobject/package.json
+188 verbose read json /var/www/html/servers/node_modules/serialised-error/package.json
+189 verbose read json /var/www/html/servers/node_modules/source-map/package.json
+190 verbose read json /var/www/html/servers/node_modules/wss/package.json
+191 verbose read json /var/www/html/servers/node_modules/base64id/package.json
+192 verbose read json /var/www/html/servers/node_modules/parseqs/package.json
+193 verbose read json /var/www/html/servers/node_modules/punycode/package.json
+194 verbose read json /var/www/html/servers/node_modules/js-yaml/package.json
+195 verbose read json /var/www/html/servers/node_modules/sanitize-html/package.json
+196 verbose read json /var/www/html/servers/node_modules/glob/package.json
+197 verbose read json /var/www/html/servers/node_modules/httpreq/package.json
+198 verbose read json /var/www/html/servers/node_modules/component-bind/package.json
+199 verbose read json /var/www/html/servers/node_modules/toidentifier/package.json
+200 verbose read json /var/www/html/servers/node_modules/color-convert/package.json
+201 verbose read json /var/www/html/servers/node_modules/nan/package.json
+202 verbose read json /var/www/html/servers/node_modules/liquid-json/package.json
+203 verbose read json /var/www/html/servers/node_modules/optimist/package.json
+204 verbose read json /var/www/html/servers/node_modules/socket.io-adapter/package.json
+205 verbose read json /var/www/html/servers/node_modules/callsite/package.json
+206 verbose read json /var/www/html/servers/node_modules/filesize/package.json
+207 verbose read json /var/www/html/servers/node_modules/pretty-ms/package.json
+208 verbose read json /var/www/html/servers/node_modules/blob/package.json
+209 verbose read json /var/www/html/servers/node_modules/yaeti/package.json
+210 verbose read json /var/www/html/servers/node_modules/http-reasons/package.json
+211 verbose read json /var/www/html/servers/node_modules/combined-stream/package.json
+212 verbose read json /var/www/html/servers/node_modules/isexe/package.json
+213 verbose read json /var/www/html/servers/node_modules/ansi-regex/package.json
+214 verbose read json /var/www/html/servers/node_modules/charset/package.json
+215 verbose read json /var/www/html/servers/node_modules/tweetnacl/package.json
+216 verbose read json /var/www/html/servers/node_modules/oauth-sign/package.json
+217 verbose read json /var/www/html/servers/node_modules/jsbn/package.json
+218 verbose read json /var/www/html/servers/node_modules/postman-runtime/package.json
+219 verbose read json /var/www/html/servers/node_modules/indexof/package.json
+220 verbose read json /var/www/html/servers/node_modules/strip-json-comments/package.json
+221 verbose read json /var/www/html/servers/node_modules/postcss/package.json
+222 verbose read json /var/www/html/servers/node_modules/fast-deep-equal/package.json
+223 verbose read json /var/www/html/servers/node_modules/content-type/package.json
+224 verbose read json /var/www/html/servers/node_modules/stream-length/package.json
+225 verbose read json /var/www/html/servers/node_modules/underscore/package.json
+226 verbose read json /var/www/html/servers/node_modules/safe-buffer/package.json
+227 verbose read json /var/www/html/servers/node_modules/component-emitter/package.json
+228 verbose read json /var/www/html/servers/node_modules/http-errors/package.json
+229 verbose read json /var/www/html/servers/node_modules/@postman/package.json
+230 verbose read json /var/www/html/servers/node_modules/async-limiter/package.json
+231 verbose read json /var/www/html/servers/node_modules/crypto-js/package.json
+232 verbose read json /var/www/html/servers/node_modules/tough-cookie/package.json
+233 verbose read json /var/www/html/servers/node_modules/which/package.json
+234 verbose read json /var/www/html/servers/node_modules/depd/package.json
+235 verbose read json /var/www/html/servers/node_modules/lodash.clonedeep/package.json
+236 verbose read json /var/www/html/servers/node_modules/levn/package.json
+237 verbose read json /var/www/html/servers/node_modules/chalk/package.json
+238 verbose read json /var/www/html/servers/node_modules/unpipe/package.json
+239 verbose read json /var/www/html/servers/node_modules/object-component/package.json
+240 verbose read json /var/www/html/servers/node_modules/node-oauth1/package.json
+241 verbose read json /var/www/html/servers/node_modules/vary/package.json
+242 verbose read json /var/www/html/servers/node_modules/json-schema/package.json
+243 verbose read json /var/www/html/servers/node_modules/strftime/package.json
+244 verbose read json /var/www/html/servers/node_modules/bcrypt-pbkdf/package.json
+245 verbose read json /var/www/html/servers/node_modules/getpass/package.json
+246 verbose read json /var/www/html/servers/node_modules/methods/package.json
+247 verbose read json /var/www/html/servers/node_modules/file-type/package.json
+248 verbose read json /var/www/html/servers/node_modules/jsprim/package.json
+249 verbose read json /var/www/html/servers/node_modules/has-flag/package.json
+250 verbose read json /var/www/html/servers/node_modules/finalhandler/package.json
+251 verbose read json /var/www/html/servers/node_modules/assert-plus/package.json
+252 verbose read json /var/www/html/servers/node_modules/path-to-regexp/package.json
+253 verbose from cache /var/www/html/servers/package.json
+254 verbose readDependencies using package.json deps
+255 verbose cache add [ 'socket.io', null ]
+256 silly cache add name=undefined spec="socket.io" args=["socket.io",null]
+257 verbose parsed url { pathname: 'socket.io', path: 'socket.io', href: 'socket.io' }
+258 silly lockFile 71475bfd-socket-io socket.io
+259 verbose lock socket.io /home/full00/.npm/71475bfd-socket-io.lock
+260 silly lockFile 71475bfd-socket-io socket.io
+261 verbose addNamed [ 'socket.io', '' ]
+262 verbose addNamed [ null, '' ]
+263 silly lockFile c03de861-socket-io socket.io@
+264 verbose lock socket.io@ /home/full00/.npm/c03de861-socket-io.lock
+265 silly addNameRange { name: 'socket.io', range: '', hasData: false }
+266 verbose url raw socket.io
+267 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+268 verbose url resolved https://registry.npmjs.org/socket.io
+269 info trying registry request attempt 1 at 17:06:17
+270 http GET https://registry.npmjs.org/socket.io
+271 silly lockFile c03de861-socket-io socket.io@
+272 error Error: SSL Error: CERT_UNTRUSTED
+272 error     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:525:26)
+272 error     at ClientRequest.g (events.js:192:14)
+272 error     at ClientRequest.EventEmitter.emit (events.js:96:17)
+272 error     at HTTPParser.parserOnIncomingClient [as onIncoming] (http.js:1462:7)
+272 error     at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
+272 error     at CleartextStream.socketOnData [as ondata] (http.js:1367:20)
+272 error     at CleartextStream.CryptoStream._push (tls.js:526:27)
+272 error     at SecurePair.cycle (tls.js:880:20)
+272 error     at EncryptedStream.CryptoStream.write (tls.js:267:13)
+272 error     at Socket.ondata (stream.js:38:26)
+273 error If you need help, you may report this log at:
+273 error     <http://github.com/isaacs/npm/issues>
+273 error or email it to:
+273 error     <npm-@googlegroups.com>
+274 error System Linux 4.15.0-142-generic
+275 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "socket.io"
+276 error cwd /var/www/html/servers
+277 error node -v v0.8.15
+278 error npm -v 1.1.66
+279 error code ESSL
+280 verbose exit [ 1, true ]

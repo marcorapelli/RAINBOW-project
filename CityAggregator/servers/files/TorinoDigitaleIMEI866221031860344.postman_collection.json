@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "09901a38-0f7f-4b36-8009-4cf6d2d834ad",
+		"name": "TorinoDigitale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getVehicles",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "accessKey",
+							"value": "AKIAJYQME5UUGBLNK4QQ",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "uqRdPSbUqksC5HuSlMHtvS98NKktkNssagmM5on9",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "eu-west-1",
+							"type": "string"
+						},
+						{
+							"key": "service",
+							"value": "execute-api",
+							"type": "string"
+						},
+						{
+							"key": "saveToRequest",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eiumofbw78.execute-api.eu-west-1.amazonaws.com/t1/thirdparty/v1/vehicles/",
+					"protocol": "https",
+					"host": [
+						"eiumofbw78",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"t1",
+						"thirdparty",
+						"v1",
+						"vehicles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVehicleData",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "accessKey",
+							"value": "AKIAJYQME5UUGBLNK4QQ",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "uqRdPSbUqksC5HuSlMHtvS98NKktkNssagmM5on9",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "eu-west-1",
+							"type": "string"
+						},
+						{
+							"key": "service",
+							"value": "execute-api",
+							"type": "string"
+						},
+						{
+							"key": "saveToRequest",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://eiumofbw78.execute-api.eu-west-1.amazonaws.com/t1/thirdparty/v1/vehicles/866221031860344/telematicdata",
+					"protocol": "https",
+					"host": [
+						"eiumofbw78",
+						"execute-api",
+						"eu-west-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"t1",
+						"thirdparty",
+						"v1",
+						"vehicles",
+						"866221031860344",
+						"telematicdata"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getData",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Host",
+								"value": "u0t1w02gif.execute-api.eu-west-1.amazonaws.com"
+							},
+							{
+								"key": "X-Amz-Date",
+								"value": "20180611T072720Z"
+							},
+							{
+								"key": "Authorization",
+								"value": "AWS4-HMAC-SHA256 Credential=AKIAJYQME5UUGBLNK4QQ/20180611/eu-west-1/execute-api/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=d7afaa63eae756328942abe18c91d421d4287f3097a231465af9a037ad919060"
+							}
+						],
+						"url": {
+							"raw": "https://eiumofbw78.execute-api.eu-west-1.amazonaws.com/t1/thirdparty/v1/vehicles/866221031860344/telematicdata",
+							"protocol": "https",
+							"host": [
+								"eiumofbw78",
+								"execute-api",
+								"eu-west-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"t1",
+								"thirdparty",
+								"v1",
+								"vehicles",
+								"866221031860344",
+								"telematicdata"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 01 Aug 2019 19:19:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "114"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "44d9e8e3-b491-11e9-859a-77028c10b42a"
+						},
+						{
+							"key": "x-amzn-ErrorType",
+							"value": "InvalidSignatureException"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "dwYxNGoejoEFdUg="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Signature expired: 20180611T072720Z is now earlier than 20190801T191422Z (20190801T191922Z - 5 min.)\"\n}"
+				}
+			]
+		}
+	]
+}
