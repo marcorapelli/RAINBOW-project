@@ -1,0 +1,150 @@
+DENM Protocol Version 2 - Length 190 bytes - Hex Payload [GNH+BTP+PDU]                                                                                                                                                                                                                                                          
+    01 00 05 01 20 40 01 80 00 86 02 00 40 EE 00 00 14 00 8C FD F0 1F 6D 07 5D E0 B1 E4 1B 5E A6 B5    
+    06 95 0D 13 86 B8 01 FB 1B 5E A8 2D 06 95 0F AB 01 F4 00 00 00 00 00 00 07 D2 00 00 02 01 F0 1F    
+    6D 07 C7 78 0F B6 83 80 02 0F 6B BC 16 79 E3 DA EF 05 9E 7D 10 39 12 D7 1D EE 1A B0 C8 0C 80 00    
+    1E 07 88 60 00 50 14 10 90 23 0D 48 3C 7F 84 82 6F E2 83 F3 02 C6 70 00 C7 7E CD 1F 77 56 33 80      
+    08 0B F6 58 FB BE 31 92 00 40 DF B2 97 DD F1 8C E0 02 0A FD 96 BE EF 6C 64 80 10 37 EC 89 F7 76    
+    63 38 00 80 BF 64 2F BB B3 19 C0 04 15 FB 2E 7D E3 18 CE 00 20 2F D9 83 EF 1A C6 70 01 02         
+
+DENM Protocol Version 2 - Message Decoded	     
+ [-] GEO-BH - Basic Header             
+       |  Version:               0               0          
+       |  Next Header:           Common Header   1          
+       |  Reserved 8 Bits:       0               00         
+      [-] Life Time    1s   05   
+            |  Base:         1s   1          
+            |  Multiplier:   1    01         
+       |  Remaining Hop Limit:   1               01         
+ [-] GEO-CH - Common Header            
+       |  Next Header:                 BTP-B            2            
+       |  Reserved 4 Bits:             0                0            
+       |  Header Type:                 GeoBroadcast     4            
+       |  Header Sub Type:             Circular Area    0            
+      [-] Traffic Class    1   01      
+            |  Store Carry Forward:   No   0          
+            |  Channel Offload:       No   0          
+            |  Traffic Class ID:      1    01         
+      [-] Flags    128   80            
+            |  ITS-S is mobile or stationary:   Vehicle ITS Station   1          
+            |  Reserved 7 Bits:                 0                     00         
+       |  Payload Length:              134 bytes        0086         
+       |  Maximum Hop Limit:           2                02           
+       |  Reserved 8 Bits:             0                00           
+ [-] GEO-EH - Extended Header          
+       |  Sequence Number:                      16622         40EE             
+       |  Reserved 16 Bits:                     0             0000             
+      [-] Long Position Vector    (Source)      
+           [-] GeoNetworking Address    14 00 8C:FD:F0:1F:6D:07   14 00 8C FD F0 1F 6D 07      
+                 |  Manually flag:          Non manually        0                         
+                 |  Station Type:           Passenger Car       5                         
+                 |  Station Country Code:   0                   000                       
+                 |  MAC layer address:      8C:FD:F0:1F:6D:07   8C FD F0 1F 6D 07         
+            |  Timestamp:                                                                      UTC+0 2021-05-02 10:24:08.284   5DE0B1E4         
+            |  Latitude:                                                                       45.918793 °                     1B5EA6B5         
+            |  Longitude:                                                                      11.043150 °                     06950D13         
+            |  Position Accuracy Indicator:                                                    1                               1                
+            |  Speed:                                                                          17.200001 m/s                   06B8             
+            |  Heading:                                                                        50.700001 ° from North          01FB             
+       |  Area Position Latitude:               45.918823 °   1B5EA82D         
+       |  Area Position Longitude:              11.043217 °   06950FAB         
+       |  Distance A:                           500 m         01F4             
+       |  Distance B:                           0 m           0000             
+       |  Angle:                                0 °           0000             
+       |  Reserved 16 Bits:                     0             0000             
+ [-] BTP - Basic Transport Protocol    
+       |  Destination port:        2002   07D2         
+       |  Destination port info:   0      0000         
+ [-] EU_ApplMsg::DENM                  
+      [-] header          
+            |  protocolVersion:   2            2                
+            |  messageID:         denm         1                
+            |  stationID:         4028591367   F01F6D07         
+      [-] denm            
+           [-] management          
+                [-] actionID                     
+                      |  originatingStationID:   4028591367   F01F6D07         
+                      |  sequenceNumber:         4            4                
+                 |  detectionTime:               529855984591 ms since 01.01.2004 UTC   7B5DE0B3CF         
+                 |  referenceTime:               529855984591 ms since 01.01.2004 UTC   7B5DE0B3CF         
+                [-] eventPosition                
+                      |  latitude:                          45.9188269 °   1B5EA82D         
+                      |  longitude:                         11.0432171 °   6950FAB          
+                     [-] positionConfidenceEllipse          
+                           |  semiMajorConfidence:    200 cm   C8         
+                           |  semiMinorConfidence:    200 cm   C8         
+                           |  semiMajorOrientation:   0.0 °    0          
+                     [-] altitude                           
+                           |  altitudeValue:        230.00 m     59D8         
+                           |  altitudeConfidence:   alt_005_00    8           
+                 |  relevanceDistance:           lessThan500m                            3                 
+                 |  relevanceTrafficDirection:   allTrafficDirections                    0                 
+                 |  validityDuration:            20                                     14                 
+                 |  stationType:                 passengerCar                           5                  
+           [-] situation           
+                 |  informationQuality:   lowest   1         
+                [-] eventType             
+                      |  causeCode:      adverseWeatherCondition_Visibility   12         
+                      |  subCauseCode:   4                                    4          
+           [-] location            
+                [-] eventSpeed                    
+                      |  speedValue:        17.00 m/s   6A4         
+                      |  speedConfidence:   0.16 m/s    10          
+                [-] eventPositionHeading          
+                      |  headingValue:        51.0 °   1FE         
+                      |  headingConfidence:   1.0 °    A           
+                [-] traces                        
+                     [-] [0]          
+                          [-] [0]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0000943 °   FFC51         
+                                     |  deltaLongitude:   -0.0001662 °   FF982         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.00 s   64         
+                          [-] [1]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001227 °   FFB35         
+                                     |  deltaLongitude:   -0.0002186 °   FF776         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.29 s   81         
+                          [-] [2]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001235 °   FFB2D         
+                                     |  deltaLongitude:   -0.0002179 °   FF77D         
+                                     |  deltaAltitude:    -0.10 m        FFF6          
+                                |  pathDeltaTime:        1.30 s   82         
+                          [-] [3]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001238 °   FFB2A         
+                                     |  deltaLongitude:   -0.0002179 °   FF77D         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.31 s   83         
+                          [-] [4]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001234 °   FFB2E         
+                                     |  deltaLongitude:   -0.0002180 °   FF77C         
+                                     |  deltaAltitude:    -0.10 m        FFF6          
+                                |  pathDeltaTime:        1.30 s   82         
+                          [-] [5]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001245 °   FFB23         
+                                     |  deltaLongitude:   -0.0002185 °   FF777         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.29 s   81         
+                          [-] [6]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001246 °   FFB22         
+                                     |  deltaLongitude:   -0.0002185 °   FF777         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.31 s   83         
+                          [-] [7]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001233 °   FFB2F         
+                                     |  deltaLongitude:   -0.0002163 °   FF78D         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.29 s   81         
+                          [-] [8]          
+                               [-] pathPosition          
+                                     |  deltaLatitude:    -0.0001231 °   FFB31         
+                                     |  deltaLongitude:   -0.0002162 °   FF78E         
+                                     |  deltaAltitude:    0.00 m         0             
+                                |  pathDeltaTime:        1.30 s   82         

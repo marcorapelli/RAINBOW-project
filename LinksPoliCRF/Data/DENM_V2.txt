@@ -1,0 +1,116 @@
+{
+    'denm': {
+        'location': {
+            'eventPositionHeading': {
+                'headingConfidence': 10,
+                'headingValue': 510
+            },
+            'eventSpeed': {
+                'speedConfidence': 16,
+                'speedValue': 1700
+            },
+            'traces': [[{
+                'pathDeltaTime': 100,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -943,
+                    'deltaLongitude': -1662
+                }
+            }, {
+                'pathDeltaTime': 129,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -1227,
+                    'deltaLongitude': -2186
+                }
+            }, {
+                'pathDeltaTime': 130,
+                'pathPosition': {
+                    'deltaAltitude': -10,
+                    'deltaLatitude': -1235,
+                    'deltaLongitude': -2179
+                }
+            }, {
+                'pathDeltaTime': 131,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -1238,
+                    'deltaLongitude': -2179
+                }
+            }, {
+                'pathDeltaTime': 130,
+                'pathPosition': {
+                    'deltaAltitude': -10,
+                    'deltaLatitude': -1234,
+                    'deltaLongitude': -2180
+                }
+            }, {
+                'pathDeltaTime': 129,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -1245,
+                    'deltaLongitude': -2185
+                }
+            }, {
+                'pathDeltaTime': 131,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -1246,
+                    'deltaLongitude': -2185
+                }
+            }, {
+                'pathDeltaTime': 129,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -1233,
+                    'deltaLongitude': -2163
+                }
+            }, {
+                'pathDeltaTime': 130,
+                'pathPosition': {
+                    'deltaAltitude': 0,
+                    'deltaLatitude': -1231,
+                    'deltaLongitude': -2162
+                }
+            }]]
+        },
+        'management': {
+            'actionID': {
+                'originatingStationID': 4028591367,
+                'sequenceNumber': 4
+            },
+            'detectionTime': 529855984591,
+            'eventPosition': {
+                'altitude': {
+                    'altitudeConfidence': 'alt-005-00',
+                    'altitudeValue': 23000
+                },
+                'latitude': 459188269,
+                'longitude': 110432171,
+                'positionConfidenceEllipse': {
+                    'semiMajorConfidence': 200,
+                    'semiMajorOrientation': 0,
+                    'semiMinorConfidence': 200
+                }
+            },
+            'referenceTime': 529855984591,
+            'relevanceDistance': 'lessThan500m',
+            'relevanceTrafficDirection': 'allTrafficDirections',
+            'stationType': 5,
+            'validityDuration': 20
+        },
+        'situation': {
+            'eventType': {
+                'causeCode': 18,
+                'subCauseCode': 4
+            },
+            'informationQuality': 1
+        }
+    },
+    'header': {
+        'messageID': 1,
+        'protocolVersion': 2,
+        'stationID': 4028591367
+    }
+}
+

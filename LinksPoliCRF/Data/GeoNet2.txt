@@ -1,0 +1,50 @@
+01000501204201800086020040EE000014008CFDF01F6D075DE0B1E41AD7568A0493157686B801FB1AD7AC84049344B00046000A000C000007D20000
+
+
+ [-] GEO-BH - Basic Header             
+       |  Version:               0               0          
+       |  Next Header:           Common Header   1          
+       |  Reserved 8 Bits:       0               00         
+      [-] Life Time    1s   05   
+            |  Base:         1s   1          
+            |  Multiplier:   1    01         
+       |  Remaining Hop Limit:   1               01         
+ [-] GEO-CH - Common Header            
+       |  Next Header:                 BTP-B            2            
+       |  Reserved 4 Bits:             0                0            
+       |  Header Type:                 GeoBroadcast     4            
+       |  Header Sub Type:             Elliptical Area  2           
+      [-] Traffic Class    1   01      
+            |  Store Carry Forward:   No   0          
+            |  Channel Offload:       No   0          
+            |  Traffic Class ID:      1    01         
+      [-] Flags    128   80            
+            |  ITS-S is mobile or stationary:   Vehicle ITS Station   1          
+            |  Reserved 7 Bits:                 0                     00         
+       |  Payload Length:              134 bytes        0086         
+       |  Maximum Hop Limit:           2                02           
+       |  Reserved 8 Bits:             0                00           
+ [-] GEO-EH - Extended Header          
+       |  Sequence Number:                      16622         40EE             
+       |  Reserved 16 Bits:                     0             0000             
+      [-] Long Position Vector    (Source)      
+           [-] GeoNetworking Address    14 00 8C:FD:F0:1F:6D:07   14 00 8C FD F0 1F 6D 07      
+                 |  Manually flag:          Non manually        0                         
+                 |  Station Type:           Passenger Car       5                         
+                 |  Station Country Code:   0                   000                       
+                 |  MAC layer address:      8C:FD:F0:1F:6D:07   8C FD F0 1F 6D 07         
+            |  Timestamp:                                                                      UTC+0 2021-05-02 10:24:08.284   5DE0B1E4         
+            |  Latitude:                                                                       45.0320010 °                    1AD7568A         
+            |  Longitude:                                                                      7.6748150 °                     04931576         
+            |  Position Accuracy Indicator:                                                    1                               1                
+            |  Speed:                                                                          17.200001 m/s                   06B8             
+            |  Heading:                                                                        50.700001 ° from North          01FB             
+       |  Area Position Latitude:               45.0342020 °  1AD7AC84        
+       |  Area Position Longitude:              7.6760240 °   049344B0       
+       |  Distance A:                           70 m          0046             
+       |  Distance B:                           10 m          000A             
+       |  Angle:                                12 °          000C             
+       |  Reserved 16 Bits:                     0             0000             
+ [-] BTP - Basic Transport Protocol    
+       |  Destination port:        2002   07D2         
+       |  Destination port info:   0      0000   

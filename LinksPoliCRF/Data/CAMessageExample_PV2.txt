@@ -1,0 +1,161 @@
+CAM Protocol Version 2 - Length 153 bytes - Hex Payload [GNH+BTP+PDU]                                                                                                                           
+	01 00 05 01 20 50 02 80 00 71 01 00 14 00 00 A0 C6 EC 1A 5A 5D E0 B1 1C 1B 5E B4 54 06 95 25 14 
+	86 66 01 FE 00 00 00 00 07 D1 00 00 02 02 C6 EC 1A 5A B3 D7 40 5A 20 73 F9 4E 3B DF 6E 61 90 19   
+	00 00 3B FB 10 78 1F E0 83 3E 03 03 06 92 8B 33 FF 61 FF FA 02 14 00 01 3D 98 00 03 DF BC 87 E2 
+	15 8C E0 01 DA FD 8C BE EB 8C 67 00 11 77 EC 8D F7 7A 63 38 00 8B BF 65 6F BB DB 19 C0 04 5D FB  
+	29 7D DC 98 CE 00 23 2F D8 EB EE CE C6 70 01 17 7E C4 9F 74 B6 32 40 08 B0    
+
+CAM Protocol Version 2 - Message Decoded	
+ [-] GEO-BH - Basic Header             
+       |  Version:               0               0          
+       |  Next Header:           Common Header   1          
+       |  Reserved 8 Bits:       0               00         
+      [-] Life Time    1s   05   
+            |  Base:         1s   1          
+            |  Multiplier:   1    01         
+       |  Remaining Hop Limit:   1               01         
+ [-] GEO-CH - Common Header            
+       |  Next Header:                 BTP-B                            2            
+       |  Reserved 4 Bits:             0                                0            
+       |  Header Type:                 Topologically Scoped Broadcast   5            
+       |  Header Sub Type:             Single-hop                       0            
+      [-] Traffic Class    2   02      
+            |  Store Carry Forward:   No   0          
+            |  Channel Offload:       No   0          
+            |  Traffic Class ID:      2    02         
+      [-] Flags    128   80            
+            |  ITS-S is mobile or stationary:   Vehicle ITS Station   1          
+            |  Reserved 7 Bits:                 0                     00         
+       |  Payload Length:              113 bytes                        0071         
+       |  Maximum Hop Limit:           1                                01           
+       |  Reserved 8 Bits:             0                                00           
+ [-] GEO-EH - Extended Header          
+      [-] Long Position Vector    (Source)      
+           [-] GeoNetworking Address    14 00 00:A0:C6:EC:1A:5A   14 00 00 A0 C6 EC 1A 5A      
+                 |  Manually flag:          Non manually        0                         
+                 |  Station Type:           Passenger Car       5                         
+                 |  Station Country Code:   0                   000                       
+                 |  MAC layer address:      00:A0:C6:EC:1A:5A   00 A0 C6 EC 1A 5A         
+            |  Timestamp:                                                                      UTC+0 2021-05-02 10:24:08.084   5DE0B11C         
+            |  Latitude:                                                                       45.919140 °                     1B5EB454         
+            |  Longitude:                                                                      11.043765 °                     06952514         
+            |  Position Accuracy Indicator:                                                    1                               1                
+            |  Speed:                                                                          16.379999 m/s                   0666             
+            |  Heading:                                                                        51.000000 ° from North          01FE             
+       |  Reserved 32 Bits:                     0   00000000         
+ [-] BTP - Basic Transport Protocol    
+       |  Destination port:        2001   07D1         
+       |  Destination port info:   0      0000         
+ [-] EU_ApplMsg::CAM                   
+      [-] header          
+            |  protocolVersion:   2            2                
+            |  messageID:         cam          2                
+            |  stationID:         3337362010   C6EC1A5A         
+      [-] cam             
+            |  generationDeltaTime:   46039 ms   B3D7         
+           [-] camParameters          
+                [-] basicContainer                  
+                      |  stationType:               passengerCar   5         
+                     [-] referencePosition          
+                           |  latitude:                          45.9192010 °   1B5EB6CA         
+                           |  longitude:                         11.0438771 °   6952973          
+                          [-] positionConfidenceEllipse          
+                                |  semiMajorConfidence:    200 cm   C8         
+                                |  semiMinorConfidence:    200 cm   C8         
+                                |  semiMajorOrientation:   0.0 °    0          
+                          [-] altitude                           
+                                |  altitudeValue:        228.40 m     5938         
+                                |  altitudeConfidence:   alt_005_00    8           
+                [-] highFrequencyContainer          
+                     [-] basicVehicleContainerHighFrequency          
+                          [-] heading                                        
+                                |  headingValue:        51.0 °   1FE         
+                                |  headingConfidence:   0.5 °    5           
+                          [-] speed                                          
+                                |  speedValue:        16.60 m/s   67C         
+                                |  speedConfidence:   0.04 m/s    4           
+                           |  driveDirection:                                forward                 0         
+                          [-] vehicleLength                                  
+                                |  vehicleLengthValue:                  4.9 m                      31         
+                                |  vehicleLengthConfidenceIndication:   trailerPresenceIsUnknown    3         
+                           |  vehicleWidth:                                  1.9 m                  13         
+                          [-] longitudinalAcceleration                       
+                                |  longitudinalAccelerationValue:        0.2 m/s²      2          
+                                |  longitudinalAccelerationConfidence:   unavailable   66         
+                          [-] curvature                                      
+                                |  curvatureValue:        straight            0          
+                                |  curvatureConfidence:   onePerMeter_0_002    3         
+                           |  curvatureCalculationMode:                      yawRateUsed             0         
+                          [-] yawRate                                        
+                                |  yawRateValue:        0.00 ° per second   0          
+                                |  yawRateConfidence:   unavailable          8         
+                          [-] accelerationControl    accEngaged   0000 100   
+                                |  brakePedalEngaged:         0   0 . . .  . . .          
+                                |  gasPedalEngaged:           0   . 0 . .  . . .          
+                                |  emergencyBrakeEngaged:     0   . . 0 .  . . .          
+                                |  collisionWarningEngaged:   0   . . . 0  . . .          
+                                |  accEngaged:                1   . . . .  1 . .          
+                                |  cruiseControlEngaged:      0   . . . .  . 0 .          
+                                |  speedLimiterEngaged:       0   . . . .  . . 0          
+                           |  lanePosition:                                  outermostDrivingLane   1          
+                          [-] steeringWheelAngle                             
+                                |  steeringWheelAngleValue:        1.5 °   1         
+                                |  steeringWheelAngleConfidence:   1.5 °   1         
+                          [-] lateralAcceleration                            
+                                |  lateralAccelerationValue:        -0.2 m/s²     FFE         
+                                |  lateralAccelerationConfidence:   unavailable   66          
+                [-] lowFrequencyContainer           
+                     [-] basicVehicleContainerLowFrequency          
+                           |  vehicleRole:                      default    0         
+                          [-] exteriorLights       0000 0000    
+                                |  lowBeamHeadlightsOn:      0   0 . . .  . . . .           
+                                |  highBeamHeadlightsOn:     0   . 0 . .  . . . .           
+                                |  leftTurnSignalOn:         0   . . 0 .  . . . .           
+                                |  rightTurnSignalOn:        0   . . . 0  . . . .           
+                                |  daytimeRunningLightsOn:   0   . . . .  0 . . .           
+                                |  reverseLightOn:           0   . . . .  . 0 . .           
+                                |  fogLightOn:               0   . . . .  . . 0 .           
+                                |  parkingLightsOn:          0   . . . .  . . . 0           
+                          [-] pathHistory                       
+                               [-] [0]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001079 °   FFBC9         
+                                          |  deltaLongitude:   -0.0001914 °   FF886         
+                                          |  deltaAltitude:    0.00 m         0             
+                                     |  pathDeltaTime:        1.19 s   77         
+                               [-] [1]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001254 °   FFB1A         
+                                          |  deltaLongitude:   -0.0002211 °   FF75D         
+                                          |  deltaAltitude:    0.00 m         0             
+                                     |  pathDeltaTime:        1.40 s   8C         
+                               [-] [2]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001244 °   FFB24         
+                                          |  deltaLongitude:   -0.0002181 °   FF77B         
+                                          |  deltaAltitude:    0.00 m         0             
+                                     |  pathDeltaTime:        1.40 s   8C         
+                               [-] [3]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001236 °   FFB2C         
+                                          |  deltaLongitude:   -0.0002180 °   FF77C         
+                                          |  deltaAltitude:    0.00 m         0             
+                                     |  pathDeltaTime:        1.40 s   8C         
+                               [-] [4]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001238 °   FFB2A         
+                                          |  deltaLongitude:   -0.0002189 °   FF773         
+                                          |  deltaAltitude:    0.00 m         0             
+                                     |  pathDeltaTime:        1.41 s   8D         
+                               [-] [5]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001250 °   FFB1E         
+                                          |  deltaLongitude:   -0.0002200 °   FF768         
+                                          |  deltaAltitude:    0.00 m         0             
+                                     |  pathDeltaTime:        1.40 s   8C         
+                               [-] [6]          
+                                    [-] pathPosition          
+                                          |  deltaLatitude:    -0.0001261 °   FFB13         
+                                          |  deltaLongitude:   -0.0002228 °   FF74C         
+                                          |  deltaAltitude:    -0.10 m        FFF6          
+                                     |  pathDeltaTime:        1.40 s   8C         
